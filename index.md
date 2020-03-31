@@ -1,6 +1,6 @@
 ## Hello, DIns! Test msg from git command
 
-next: try to custom the style and deploy it
+next: try to custom the style and re-deploy it
 [ref about netify](https://kuleyu.github.io/hexolog/post/31808.html)
 
 ## Welcome to GitHub Pages
