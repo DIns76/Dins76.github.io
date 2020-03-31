@@ -1,6 +1,8 @@
-##Hello, DIns! Test msg here
-next, custom style and deploy it
-ref: https://kuleyu.github.io/hexolog/post/31808.html
+## Hello, DIns! Test msg from git command
+
+next: try to custom the style and deploy it
+[ref about netify](https://kuleyu.github.io/hexolog/post/31808.html)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/DIns76/Dins76.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
