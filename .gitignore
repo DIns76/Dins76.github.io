@@ -4,7 +4,6 @@ db.json
 *.log
 .ruby-version
 Gemfile
-index.md
 node_modules/
 # public/
 .deploy*/
