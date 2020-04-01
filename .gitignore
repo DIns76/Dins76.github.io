@@ -6,6 +6,6 @@ db.json
 Gemfile
 index.md
 node_modules/
-public/
+# public/
 .deploy*/
 scaffolds/
