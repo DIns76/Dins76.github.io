@@ -1,4 +1,7 @@
-# for ruby
-Gemfile
-
-.ruby-version
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
