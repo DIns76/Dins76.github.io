@@ -2,9 +2,7 @@
 Thumbs.db
 db.json
 *.log
-.ruby-version
-Gemfile
 node_modules/
-# public/
+public/
 .deploy*/
-scaffolds/
+package-lock.json
