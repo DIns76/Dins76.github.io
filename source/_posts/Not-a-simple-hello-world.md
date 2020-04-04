@@ -132,7 +132,6 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/github-actions-deploy
 $ git clone git@github.com:$(username)/$(username).github.io.git
 # clone下hexo部署使用的仓库，然后切进去
 $ cd $(username)/
-
 $ git checkout -b gh-pages-source	#生成并切换到本地新分支
 $ cp -r ~/$(gh-pages-src)/* ./	#复制所有文件到当前文件夹，记得复制./github/ !!!
 
@@ -169,7 +168,7 @@ Error: Spawn failed
   然后就可以把本地的hexo源文件库删掉啦，远程也就是Github上的可以删除，不过还是推荐 ``Archived`` 当作备份！！
   怎么方便怎么操作，到时候本地源文件受损，可以复制那个仓库或者用下面命令进行单一分支复制都可（或者本地也用这条命令，直接保存gh-pages-source分支，也就是**源文件！！**）
 ```
-git clone -b $(git_branch_name) --single-branch $(git_repo_url)
+$ git clone -b $(git_branch_name) --single-branch $(git_repo_url)
 ```
 
 ### 下一步？
