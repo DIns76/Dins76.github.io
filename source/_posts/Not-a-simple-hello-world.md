@@ -8,6 +8,25 @@ tags:
     - Github Action
 ---
 ### source file and blog source merge test
+
+#### problem 1
+Seems to be a RSA private key problem
+```
+Warning: Permanently added the RSA host key for IP address '***.***.113.4' to the list of known hosts.
+Load key "/home/runner/.ssh/id_rsa": invalid format
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
+Error: Spawn failed
+    at ChildProcess.task.on.code (/home/runner/work/Dins76.github.io/Dins76.github.io/node_modules/hexo-util/lib/spawn.js:51:21)
+    at ChildProcess.emit (events.js:198:13)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)
+##[error]Process completed with exit code 2.
+```
+
 ### 重新搭建
 
   本来是已经搭好了在``username.github.io``的blog，但由于直接在源文件下直接练习git操作，导致无法用hexo再次编译了，所以想把文章提取出来然后重新搭建一次，这次边练边加上自动集成并部署的 ``Github Action`` 。
