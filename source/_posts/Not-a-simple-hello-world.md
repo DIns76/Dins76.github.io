@@ -134,16 +134,15 @@ $ git clone git@github.com:$(username)/$(username).github.io.git
 $ cd $(username)/
 $ git checkout -b gh-pages-source	#生成并切换到本地新分支
 $ cp -r ~/$(gh-pages-src)/* ./	#复制所有文件到当前文件夹，记得复制./github/ !!!
-
 $ vim .github/workflow/$(any name).yml
-
 $ git add --all
 $ git commit -m "same repo test"
 $ git push origin HEAD:gh-pages-source
-
 #我这是之前建过，所以使用这个命令；如果远程只有master，使用下面这条
 $ git push origin gh-pages-source
+
 ```
+
   修改触发条件！``./github/workflow/$(any name).yml``见这个[GitHub链接](https://github.com/DIns76/Dins76.github.io/blob/gh-pages-source/.github/workflows/build_and_update_gh_Pages.yml)
 
 #### 推上去后发现一个问题
