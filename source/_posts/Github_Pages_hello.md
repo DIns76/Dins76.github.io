@@ -1,8 +1,5 @@
 ## Hello, DIns! Test msg from git command
 
-Thanks to [sspai](https://sspai.com/post/54608), know something about Pages
-next: try to custom the style and re-deploy it
-[ref about netify](https://kuleyu.github.io/hexolog/post/31808.html)
 
 ## Welcome to GitHub Pages
 
