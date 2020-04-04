@@ -142,8 +142,7 @@ $ git push origin HEAD:gh-pages-source
 $ git push origin gh-pages-source
 
 ```
-
-  修改触发条件！``./github/workflow/$(any name).yml``见这个[GitHub链接](https://github.com/DIns76/Dins76.github.io/blob/gh-pages-source/.github/workflows/build_and_update_gh_Pages.yml)
+修改触发条件!``./github/workflow/$(any name).yml``见这个[GitHub链接](https://github.com/DIns76/Dins76.github.io/blob/gh-pages-source/.github/workflows/build_and_update_gh_Pages.yml)
 
 #### 推上去后发现一个问题
 
