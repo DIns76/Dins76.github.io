@@ -108,7 +108,7 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/github-actions-deploy
  - [configuring-a-workflow](https://help.github.com/cn/actions/configuring-and-managing-workflows/configuring-a-workflow)
 
 注意：
-1. 更改git的user.name 和 user.email!!
+1. 更改git的 ``user.name`` 和 ``user.email``!!
 2. 亲测，根据以上配置还有一个错误是： ``ERROR Deployer not found: git``
 这个是没有安装hexo-deployer-git库，在安装hexo后加上：
 ```
@@ -127,7 +127,7 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/github-actions-deploy
   所以开始尝试用同一个库，用两个分支：
   - ``master``：存放hexo生成文件；我默认是``hexo d``直接推送到``usernaem.github.io``这个仓库的master分支；把它放其它的分支估计要改些hexo的配置？？没折腾过；
   - ``gh-pages-source``：存放hexo编译之前的源文件，也就是``GitHub Pages``的源文件；
-  见如下命令注释：
+见如下命令注释：
 ```
 $ git clone git@github.com:$(username)/$(username).github.io.git
 # clone下hexo部署使用的仓库，然后切进去
@@ -145,7 +145,6 @@ $ git push origin gh-pages-source
 修改触发条件!``./github/workflow/$(any name).yml``见这个[GitHub链接](https://github.com/DIns76/Dins76.github.io/blob/gh-pages-source/.github/workflows/build_and_update_gh_Pages.yml)
 
 #### 推上去后发现一个问题
-
 ```
 Warning: Permanently added the RSA host key for IP address '***.***.113.4' to the list of known hosts.
 Load key "/home/runner/.ssh/id_rsa": invalid format
@@ -174,7 +173,7 @@ $ git clone -b $(git_branch_name) --single-branch $(git_repo_url)
 1. 尝试修改主题中的图和显示字体，字体看起来有点虚,可能加粗点可能会更好
 2. ~~尝试把非public/下的所有的文件都传到GitHub上~~
 3. ~~尝试``Travis CI``自动部署,或者直接尝试``Github Action``~~
-4. 继续学习 ``Markdown`` 语法用于写作；或尝试其它支持github pages的编辑器，每次都要到``source/_post/``下去新建，有点累😓
+4. 继续学习 ``Markdown`` 语法用于写作；或尝试其它支持github pages的编辑器，每次都要到``source/_post/``下去新建，有点累
 5. 继续学习 ``Git`` 使用
     - 了解git历史[10 years of git by atlassian](https://www.atlassian.com/git/articles/10-years-of-git)
     - [Pro Git_cn](https://git-scm.com/book/zh/v2)
