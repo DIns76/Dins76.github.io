@@ -1,5 +1,6 @@
 ---
 title: 这个Hello world不容易
+index_img: img/default.png
 date: 2020-04-01 23:24:01
 tags: 
     - Hexo
@@ -195,6 +196,7 @@ $ git clone -b $(git_branch_name) --single-branch $(git_repo_url)
 4. 继续学习 ``Markdown`` 语法用于写作；
  - 或尝试其它支持github pages的编辑器，每次都要到``source/_post/``下去新建，有点累
  - 尝试在线编辑器？
+ - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 5. 继续学习 ``Git`` 使用
     - 了解git历史[10 years of git by atlassian](https://www.atlassian.com/git/articles/10-years-of-git)
     - [Pro Git_cn](https://git-scm.com/book/zh/v2)
