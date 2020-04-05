@@ -28,10 +28,10 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           # set git infomation
-          git config -l
+          # git config -l
           git config --global user.name 'DIns76'
           git config --global user.email 'dzx7736@gmail.com'
-          git config -l
+          # git config -l
           # install dependencies
           npm i -g hexo-cli
           npm i
@@ -44,5 +44,9 @@ jobs:
         run: |
           # add pandoc to PATH
           #export PATH="$PATH:$RUNNER_TOOL_CACHE/pandoc-2.7.3/bin"
+          # clean cache up
+          hexo clean
           # publish
           hexo generate && hexo deploy
+          # clean building cache up
+          hexo clean
