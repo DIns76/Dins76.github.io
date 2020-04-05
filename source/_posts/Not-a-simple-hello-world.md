@@ -2,7 +2,7 @@
 title: 这个Hello world不容易
 date: 2020-04-01 23:24:01
 tags: 
-    - hexo
+    - Hexo
     - blog
     - Github Pages
     - Github Action
@@ -76,7 +76,7 @@ $ hexo d	#部署，在线查看效果;不过注意这个会把username.github.io
 
   结合网上教程来看：配置好 ``Action脚本``后；本地写好文章，``git push`` 进github，``Github Action`` 检测到有变动，之前在本地输入 ``hexo cl && hexo g && hexo d`` 的命令直接在github上运行，然后直接部署到``Github pages`` 上。
   
-  所以我的理解是：配置好``Github Action``后，只要``git push`` ，在上传完后稍等一会；然后浏览器输入 ``username.github.io`` 就可以看到，push上去的文章了。
+  所以我的理解是：配置好``Github Action``后，只要``git push`` ，在上传完后稍等一会；然后浏览器输入 ``username.github.io`` 就可以看到，push上去的文章了；在本地除了用Markdown写文章，其它的都不用管了。
 
 ##### 新建空库
 
@@ -136,7 +136,9 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/github-actions-deploy
   所以开始尝试用同一个库，用两个分支：
   - ``master``：存放hexo生成文件；我默认是``hexo d``直接推送到``usernaem.github.io``这个仓库的master分支；把它放其它的分支估计要改些hexo的配置？？没折腾过；
   - ``gh-pages-source``：存放hexo编译之前的源文件，也就是``GitHub Pages``的源文件；
+
 见如下命令注释：
+
 ```
 $ git clone git@github.com:$(username)/$(username).github.io.git
 # clone下hexo部署使用的仓库，然后切进去
@@ -190,7 +192,9 @@ $ git clone -b $(git_branch_name) --single-branch $(git_repo_url)
 1. 尝试修改主题中的图和显示字体，字体看起来有点虚,可能加粗点可能会更好
 2. ~~尝试把非public/下的所有的文件都传到GitHub上~~
 3. ~~尝试``Travis CI``自动部署,或者直接尝试``Github Action``~~
-4. 继续学习 ``Markdown`` 语法用于写作；或尝试其它支持github pages的编辑器，每次都要到``source/_post/``下去新建，有点累
+4. 继续学习 ``Markdown`` 语法用于写作；
+ - 或尝试其它支持github pages的编辑器，每次都要到``source/_post/``下去新建，有点累
+ - 尝试在线编辑器？
 5. 继续学习 ``Git`` 使用
     - 了解git历史[10 years of git by atlassian](https://www.atlassian.com/git/articles/10-years-of-git)
     - [Pro Git_cn](https://git-scm.com/book/zh/v2)
