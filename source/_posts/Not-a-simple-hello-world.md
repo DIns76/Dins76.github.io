@@ -1,6 +1,6 @@
 ---
 title: 这个Hello world不容易
-index_img: img/default.png
+index_img: img/default1.png
 date: 2020-04-01 23:24:01
 tags: 
     - Hexo
