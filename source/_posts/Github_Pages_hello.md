@@ -1,3 +1,7 @@
+---
+hide: true
+---
+
 ## Hello, DIns! Test msg from git command
 
 
